@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <script>
+    const $link = document.createElement('link');
+    $link.rel = 'stylesheet';
+    $link.href = `style.css?t=${Date.now()}`;
+
+    document.head.appendChild($link);
+  </script>
 </head>
 <body>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nulla! Sunt nostrum iste cum necessitatibus odio ut esse nobis voluptatem est nemo dolore, illo incidunt consequatur praesentium ullam quia qui?</p>
