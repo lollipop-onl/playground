@@ -4,24 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script>
-    const $link = document.createElement('link');
-    $link.rel = 'stylesheet';
-    $link.href = `style.css?t=${Date.now()}`;
-
-    document.head.appendChild($link);
-
-    const $button = document.getElementById('open');
-    $button.onclick = () => {
-      const $div = document.createElement('div');
-      $div.innerHTML = `<div class="modal" aria-modal="true" role="dialog">
-    <div class="container">
-      <div class="panel">This is a modal</div> 
-    </div>
-  </div>`;
-      document.body.appendChild($div);
-    }
-  </script>
 </head>
 <body>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nulla! Sunt nostrum iste cum necessitatibus odio ut esse nobis voluptatem est nemo dolore, illo incidunt consequatur praesentium ullam quia qui?</p>
@@ -51,5 +33,24 @@
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nulla! Sunt nostrum iste cum necessitatibus odio ut esse nobis voluptatem est nemo dolore, illo incidunt consequatur praesentium ullam quia qui?</p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nulla! Sunt nostrum iste cum necessitatibus odio ut esse nobis voluptatem est nemo dolore, illo incidunt consequatur praesentium ullam quia qui?</p>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, nulla! Sunt nostrum iste cum necessitatibus odio ut esse nobis voluptatem est nemo dolore, illo incidunt consequatur praesentium ullam quia qui?</p>
+
+  <script>
+    const $link = document.createElement('link');
+    $link.rel = 'stylesheet';
+    $link.href = `style.css?t=${Date.now()}`;
+
+    document.head.appendChild($link);
+
+    const $button = document.getElementById('open');
+    $button.onclick = () => {
+      const $div = document.createElement('div');
+      $div.innerHTML = `<div class="modal" aria-modal="true" role="dialog">
+    <div class="container">
+      <div class="panel">This is a modal</div> 
+    </div>
+  </div>`;
+      document.body.appendChild($div);
+    }
+  </script>
 </body>
 </html>
